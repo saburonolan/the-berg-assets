@@ -11,6 +11,12 @@ window.TP={
   const b=await r.blob();const inp=document.querySelector('input[type=file]');const dt=new DataTransfer();dt.items.add(new File([b],D.f,{type:'image/png'}));inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true}));
   for(let i=0;i<40;i++){await new Promise(x=>setTimeout(x,500));const t=document.querySelector('input[name="design[design_title]"]');if(t&&t.offsetParent)break;}
   await new Promise(x=>setTimeout(x,8000)); return location.href; },
+ async upload(n){ await this.init(); const D=this.data[n];
+  const h=[...document.querySelectorAll('h1,h2,h3,h4,div,a,span')].find(e=>e.children.length===0&&e.textContent.trim()==='Single File Upload');if(h)h.click();
+  await new Promise(x=>setTimeout(x,1000));
+  const r=await fetch('https://raw.githubusercontent.com/saburonolan/the-berg-assets/main/everydayiprint/'+D.f);if(!r.ok)throw new Error('fetch '+r.status);
+  const b=await r.blob();const inp=document.querySelector('input[type=file]');const dt=new DataTransfer();dt.items.add(new File([b],D.f,{type:'image/png'}));inp.files=dt.files;inp.dispatchEvent(new Event('change',{bubbles:true})); return 'uploading '+D.f; },
+ async ready(){ for(let i=0;i<60;i++){const t=document.querySelector('input[name="design[design_title]"]');if(t&&t.offsetParent){await new Promise(x=>setTimeout(x,3000));return 'ready '+location.href;} await new Promise(x=>setTimeout(x,500));} throw new Error('not ready'); },
  fill(n){ const D=this.data[n], ev=this.ev;
   const t=document.querySelector('input[name="design[design_title]"]');t.value=D.title;ev(t);
   const d=document.querySelector('textarea[name="design[design_description]"]');d.value=D.desc;ev(d);

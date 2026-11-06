@@ -1,6 +1,6 @@
 import json,sys
-D=json.load(open('/home/claude/the-berg-assets/everydayiprint/tp-data.json'))
-T=1897921713; L="await (0,eval)(await (await fetch('https://raw.githubusercontent.com/saburonolan/the-berg-assets/2284f774e220a8861fc2a5342fdb2aef17011b10/everydayiprint/tp.js')).text());"
+D=json.load(open(__import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)),'..','..','everydayiprint','tp-data.json')))
+T=int(sys.argv[2]) if len(sys.argv)>2 else 1897921713; L="await (0,eval)(await (await fetch('https://raw.githubusercontent.com/saburonolan/the-berg-assets/2284f774e220a8861fc2a5342fdb2aef17011b10/everydayiprint/tp.js')).text());"
 out=[]
 for n in sys.argv[1].split(','):
     d=D[n]

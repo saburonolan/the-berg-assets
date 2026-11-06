@@ -12,7 +12,7 @@ Files reach upload forms by fetching them from raw.githubusercontent.com inside 
 Colors: white/light products only (dark ink). safe_for_work true, rights declaration checked.
 
 ## TeePublic (store everydayiprint)
-`python3 tools/teepublic/tp3.py <n>` prints a batch for design n using everydayiprint/tp.js + tp-data.json. Always start from a fresh /design/quick_create draft; never re-upload onto a stalled draft (TeePublic returns 500). ~25 designs per rolling 24 h. Log "<n>\t<designId>" to teepublic-live.txt.
+`python3 tools/teepublic/tp3.py <n> <tabId>` prints a batch for design n using everydayiprint/tp.js + tp-data.json. Always start from a fresh /design/quick_create draft; never re-upload onto a stalled draft (TeePublic returns 500). ~25 designs per rolling 24 h. Log "<n>\t<designId>" to teepublic-live.txt.
 
 ## RenterFix Shorts (YouTube @renterfix, Google account sf01.theberg)
 Setup: `pip install --break-system-packages kokoro-onnx soundfile pillow numpy`; download kokoro-v1.0.onnx and voices-v1.0.bin from https://github.com/thewh1teagle/kokoro-onnx/releases (model-files-v1.0) into $KOKORO_DIR. Fonts: Poppins (google-fonts).

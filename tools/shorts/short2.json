@@ -1,0 +1,9 @@
+{"slug":"02-water-heater-too-hot","title":"Your Water Heater Is Probably Set Too Hot #shorts",
+ "keys":"120 140 six seconds burn landlord cover sediment quart three months follow too hot five",
+ "segments":[
+  {"scene":"heater","text":"Your water heater might be set too hot, and that's a burn risk."},
+  {"scene":"vs","rows":[["140°","6 sec","(230,80,70)"],["120°","5 min","(31,58,77)"]],"text":"At a hundred forty degrees, hot water can cause a serious burn in about six seconds. At a hundred twenty, it takes about five minutes."},
+  {"scene":"stat","big":"120","unit":"°F","label":"RECOMMENDED","note":"U.S. Dept. of Energy + CPSC","text":"That's why the Department of Energy and the Consumer Product Safety Commission both recommend a hundred twenty."},
+  {"scene":"heater","text":"On many gas tanks, it's the knob near the bottom. If the dial is behind a metal cover, leave it to your landlord or a pro."},
+  {"scene":"sediment","text":"Bonus tip. The Department of Energy says draining about a quart every three months clears sediment that makes the heater less efficient. Ask your landlord who handles it."},
+  {"scene":"cta","text":"Follow RenterFix for one fix at a time."}]}
